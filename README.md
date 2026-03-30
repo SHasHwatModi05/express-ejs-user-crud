@@ -43,8 +43,9 @@ The project follows a proper **MVC (Model-View-Controller) architecture** and in
 
 ---
 
-📁 Project Structure (MVC)
+## 📁 Project Structure (MVC)
 
+```
 project-root/
 │
 ├── models/
@@ -71,8 +72,7 @@ project-root/
 ├── package-lock.json
 ├── .env
 └── README.md
-
----
+```
 
 ## 🔄 CI/CD Pipeline
 
