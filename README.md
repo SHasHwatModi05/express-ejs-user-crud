@@ -43,26 +43,34 @@ The project follows a proper **MVC (Model-View-Controller) architecture** and in
 
 ---
 
-## 📁 Project Structure (MVC)
+📁 Project Structure (MVC)
+
+project-root/
+│
 ├── models/
 │   └── user.js
+│
 ├── public/
 │   ├── images/
 │   ├── javascripts/
 │   └── stylesheets/
+│
 ├── views/
 │   ├── index.ejs
-│   ├── read.ejs
 │   └── edit.ejs
+│
 ├── assets/
 │   └── screenshot.png
+│
 ├── .github/
 │   └── workflows/
 │       └── ci-cd.yml
+│
 ├── app.js
 ├── package.json
 ├── package-lock.json
-└── .env
+├── .env
+└── README.md
 
 ---
 
