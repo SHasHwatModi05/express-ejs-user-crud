@@ -9,17 +9,14 @@ const mongoose = require("mongoose");
 mongoose.connect(process.env.MONGO_URL).then(() => console.log("MongoDB Connected")).catch(err => console.log(err));
 
 app.set("view engine", "ejs");
+app.set("views",path.join(__dirname, "views"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-        res.send("Server is running");
-})
-
 
 app.get('/', (req, res) => {
-        res.render("index");
+        res.redirect("/read");
 })
 
 app.get('/read', async (req, res) => {
