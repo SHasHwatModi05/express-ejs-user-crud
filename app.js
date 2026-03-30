@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res) => {
-        res.redirect("/read");
+        res.render("index");
 })
 
 app.get('/read', async (req, res) => {
